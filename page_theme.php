@@ -1,5 +1,5 @@
 <?php
-namespace Application\Theme\NewTheme;
+namespace Application\Theme\Mmam;
 
 use Concrete\Core\Area\Layout\Preset\Provider\ThemeProviderInterface;
 use Concrete\Core\Page\Theme\Theme;
@@ -19,12 +19,12 @@ class PageTheme extends Theme implements ThemeProviderInterface
 
     public function getThemeName()
     {
-        return t('New Theme');
+        return t('MMAM');
     }
 
     public function getThemeDescription()
     {
-        return t('Description for a new theme.');
+        return t('Minnesota Marine Art Museum Theme');
     }
 
     /**
