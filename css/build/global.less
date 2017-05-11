@@ -1,0 +1,338 @@
+//
+// Global Styles
+// --------------------------------------------------
+
+
+// Reset the box-sizing
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  /*font: inherit; this breaks font awesome icons*/
+  /*position: relative;*/
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+a {
+  color: @scheme-callout;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: @scheme-callout-tint;
+  text-decoration: underline;
+}
+a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+figure {
+  margin: 0;
+}
+img {
+  vertical-align: middle;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid @gray-lighter;
+}
+[role="button"] {
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  line-height: @line-height-base;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+h1,
+.h1 {
+  font-family: @h1-type-font-family;
+  color: @h1-type-color;
+  font-size: @h1-type-font-size;
+  font-weight: @h1-type-font-weight;
+}
+h2,
+.h2 {
+  font-family: @h2-type-font-family;
+  color: @h2-type-color;
+  font-size: @h2-type-font-size;
+  font-weight: @h2-type-font-weight;
+}
+h3,
+.h3 {
+  font-family: @h3-type-font-family;
+  color: @h3-type-color;
+  font-size: @h3-type-font-size;
+  font-weight: @h3-type-font-weight;
+}
+h4,
+.h4 {
+  font-family: @h4-type-font-family;
+  color: @h4-type-color;
+  font-size: @h4-type-font-size;
+  font-weight: @h4-type-font-weight;
+}
+h5,
+.h5 {
+  font-family: @h5-type-font-family;
+  color: @h5-type-color;
+  font-size: @h5-type-font-size;
+  font-weight: @h5-type-font-weight;
+  text-transform: @h5-type-text-transform;
+}
+h6,
+.h6 {
+  font-family: @h6-type-font-family;
+  color: @h6-type-color;
+  font-size: @h6-type-font-size;
+  font-weight: @h6-type-font-weight;
+  text-transform: @h6-type-text-transform;
+}
+p {
+  margin: 0 0 10px;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-nowrap {
+  white-space: nowrap;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.text-muted {
+  color: @text-muted;
+}
+.bg-success {
+  background-color: @alert-success;
+}
+.bg-info {
+  background-color: @alert-info;
+}
+.bg-warning {
+  background-color: @alert-warning;
+}
+.bg-danger {
+  background-color: @alert-danger;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-bottom: 0;
+}
+dl {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+dt,
+dd {
+  line-height: @line-height-base;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 0;
+}
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: @font-size-h4;
+  border-left: 5px solid #eee;
+}
+blockquote p:last-child,
+blockquote ul:last-child,
+blockquote ol:last-child {
+  margin-bottom: 0;
+}
+address {
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: @line-height-base;
+}
+table {
+  background-color: transparent;
+}
+caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: @text-muted;
+  text-align: left;
+}
+th {
+  text-align: left;
+}
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: inherit;
+  color: @gray-dark;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  line-height: normal;
+}
+input[type="file"] {
+  display: block;
+}
+input[type="range"] {
+  display: block;
+  width: 100%;
+}
+select[multiple],
+select[size] {
+  height: auto;
+}
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+output {
+  display: block;
+  padding-top: 7px;
+  font-size: 14px;
+  line-height: @line-height-base;
+  color: @gray-medium;
+}
+input[type="radio"][disabled],
+input[type="checkbox"][disabled],
+input[type="radio"].disabled,
+input[type="checkbox"].disabled,
+fieldset[disabled] input[type="radio"],
+fieldset[disabled] input[type="checkbox"] {
+  cursor: not-allowed;
+}
+button.btn-default, span.btn-default, button {
+  color: @btn-default-color;
+  background-color: @btn-default-bg;
+  border: @btn-default-border;
+  .border-radius(@btn-default-border-radius);
+  text-transform: @btn-default-text-transform;
+  font-weight: 500;
+  padding: 0.5em 1.75em;
+  text-align: center;
+  text-decoration: none;
+  .transition-animation(background, 0.3s, ease);
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button:hover, button.btn-default:hover, span.btn-default:hover,
+button:focus, button.btn-default:focus, span.btn-default:focus {
+  background-color: @btn-default-bg-hover;
+  color: @btn-default-color-hover;
+  border: @btn-default-border;
+}
+button:focus, button.btn-default:focus, span.btn-default:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+button[disabled], button.btn-default[disabled], span.btn-default[disabled] {
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: .65;
+  pointer-events: none;
+}

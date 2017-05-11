@@ -1,0 +1,100 @@
+// Defaults
+// Theme customizations
+// Can relate to styles.xml Customizer Panel in C5
+
+@preset-name: "Default";
+@preset-icon: concrete-icon(@scheme-callout, #fff, @scheme-dominant);
+@preset-fonts-file: "build/fonts/defaults.less";
+
+
+// Typography
+@font-family-base: ~"'Open Sans', sans-serif"; // majority of text
+@font-family-primary: ~"'Open Sans', sans-serif"; // Site Title
+@font-family-secondary: ~"'Open Sans', sans-serif"; // optional
+
+@font-size-base:          16px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+@h1-type-font-size:       floor((@font-size-base * 2.4)); // ~36px
+@h2-type-font-size:       floor((@font-size-base * 1.75)); // ~30px
+@h3-type-font-size:       ceil((@font-size-base * 1.5)); // ~24px
+@h4-type-font-size:       ceil((@font-size-base * 1.15)); // ~18px
+@h5-type-font-size:       @font-size-base;
+@h6-type-font-size:       ceil((@font-size-base * 0.85)); // ~12px
+
+@line-height-base:        1.428571429; // 20/14 - unit-less for use in components like buttons.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px - computed for use with margin, padding etc.
+
+// Color
+@body-bg:                #fff;
+@text-color:             @gray-dark;
+@text-muted:             lighten(@text-color, 40%);
+@headline-color:		 @text-color;
+
+@gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray-medium:            lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@scheme-dominant:        #231082; // primary color used most
+@scheme-callout:         #bc9700; // complementary for buttons, links
+@scheme-support:         #39a300; // supports the primary color
+@scheme-highlight:       #ae0025; // secondary highlight
+
+@scheme-dominant-shade:  darken(@scheme-dominant, 10%);
+@scheme-dominant-tint:   lighten(@scheme-dominant, 10%);
+
+@scheme-callout-shade:   darken(@scheme-callout, 10%);
+@scheme-callout-tint:    lighten(@scheme-callout, 10%);
+
+@scheme-support-shade:   darken(@scheme-support, 10%);
+@scheme-support-tint:    lighten(@scheme-support, 10%);
+
+@scheme-highlight-shade: darken(@scheme-highlight, 10%);
+@scheme-highlight-tint:  lighten(@scheme-highlight, 10%);
+
+@alert-success:          #5cb85c; // green
+@alert-info:             #5bc0de; // blue
+@alert-warning:          #f0ad4e; // orange
+@alert-danger:           #d9534f; // red
+
+
+// Headings
+@h1-type-font-family: @font-family-base;
+@h1-type-color: @headline-color;
+@h1-type-font-weight: 300;
+
+@h2-type-font-family: @font-family-base;
+@h2-type-color: @headline-color;
+@h2-type-font-weight: 600;
+
+@h3-type-font-family: @font-family-base;
+@h3-type-color: @headline-color;
+@h3-type-font-weight: 300;
+
+@h4-type-font-family: @font-family-base;
+@h4-type-color: @headline-color;
+@h4-type-font-weight: 300;
+
+@h5-type-font-family: @font-family-base;
+@h5-type-color: @headline-color;
+@h5-type-font-weight: 300;
+@h5-type-text-transform: uppercase;
+
+@h6-type-font-family: @font-family-base;
+@h6-type-color: @scheme-highlight;
+@h6-type-font-weight: 300;
+@h6-type-text-transform: uppercase;
+
+// buttons
+@btn-default-color: @scheme-callout;
+@btn-default-bg: transparent;
+@btn-default-border: 2px solid @scheme-callout;
+@btn-default-border-radius: 3px;
+@btn-default-text-transform: uppercase;
+
+@btn-default-bg-hover: @scheme-callout;
+@btn-default-color-hover: #fff;

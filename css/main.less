@@ -1,0 +1,22 @@
+/* Import bootstrap 3 mixins and variables so we can use them */
+@import "build/bootstrap-3.3.7/bootstrap.less";
+
+/* Import core mixins so we can use them */
+@import "../../../../concrete/css/build/core/include/mixins.less";
+
+/* Import our theme variables. */
+@import "presets/defaults.less";
+
+/* Import our theme mixins */
+@import "./build/mixins.less";
+
+@import ~"@{preset-fonts-file}";
+
+/* Our style rules */
+@import "build/body.less";
+div.ccm-page {
+	@import "build/content.less";
+	@import "build/global.less";
+	@import "build/mobile/navigation.less";
+	@import "build/blocks/form.less";
+}
