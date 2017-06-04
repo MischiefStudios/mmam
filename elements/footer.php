@@ -3,37 +3,42 @@
 <footer>
 	<div class="container">
 		<div class="row">
-			<div class="social col-md-3 col-xs-12">
-				<ul>
-					<li class="social-fb">
-						<a target="_blank" href="https://www.facebook.com/xxxxx" title="xxxxx on Facebook">
-							<i class="fa fa-facebook-official fa-2x"></i>
-						</a>
-					</li>
-					<li class="social-in">
-						<a target="_blank" href="https://www.linkedin.com/xxxxxx" title="xxxxxxx on LinkedIn">
-							<i class="fa fa-linkedin fa-2x"></i>
-						</a>
-					</li>
-					<li class="social-gh">
-						<a target="_blank" href="https://github.com/xxxxxxx" title="xxxxxxx on GitHub">
-							<i class="fa fa-github fa-2x"></i>
-						</a>
-					</li>
-				</ul>
+			<div class="footer-links col-xs-12">
+                <ul>
+                    <li><a href="http://www.mmam.org/Facility-Rental">Facility Rental</a></li>
+                    <li><a href="http://www.mmam.org/Staff">Staff</a></li>
+                    <li><a href="http://www.mmam.org/Board-of-Directors">Board of Directors</a></li>
+                    <li><a href="http://www.mmam.org/Employment">Employment</a></li>
+                    <li><a href="http://www.mmam.org/Winona">Winona</a></li>
+                    <li><a href="http://www.mmam.org/MMAM-Stats">MMAM Stats</a></li>
+                </ul>
 			</div>
-			<div class="contact col-md-6 col-xs-12">
-				<ul>
-					<li class="contact-phone">
-						<a href="tel:000.000.0000"><span class="hidden-sm hidden-md hidden-lg">CALL US</span><span class="hidden-xs"> 000-000-0000</span></a>
-					</li>
-					<li class="contact-email">
-						<a href="mailto:contact@xxxxxxxx.com"><span class="hidden-sm hidden-md hidden-lg">EMAIL US</span><span class="hidden-xs"> contact@xxxxxxxxx.com</span></a>
-					</li>
-				</ul>
+        </div>
+        <div class="row">
+			<div class="footer-copyright col-xs-6">
+                <p>
+                    <span>© Copyright 2017  Minnesota Marine Art Museum</span>
+                    <br>
+                    <a target="_blank" href="http://www.itechra.com">Web Content Management System by Itechra</a><br>
+                    <span>Sunday, June 4, 2017</span>
+                    <br>
+                    <a title="Login" href="http://www.mmam.org/Login?returnurl=%2f">Login</a>
+                </p>
 			</div>
-			<div class="copyright col-md-3 col-xs-12">
-				<p>© xxxxxxx xxxxxxx</p>
+			<div class="footer-images col-xs-6">
+                <div class="span4">
+                    <ul>
+                        <li><a href="http://www.tripadvisor.com/Attraction_Review-g43648-d619837-Reviews-Minnesota_Marine_Art_Museum-Winona_Minnesota.html" target="_blank">
+                                <img src="http://www.mmam.org/Portals/_default/Skins/MMAM/img/trip-advisor.png" alt="Trip Advisor"></a>
+                        </li>
+                        <li><a href=" http://www.experiencemississippiriver.com" target="_blank">
+                                <img src="http://www.mmam.org/Portals/_default/Skins/MMAM/img/adver.png" alt="Experience Mississippi River"></a>
+                        </li>
+                        <li><a href="http://www.visitwinona.com" target="_blank">
+                                <img src="http://www.mmam.org/Portals/_default/Skins/MMAM/img/winona.png" alt="Visit Winona"></a>
+                        </li>
+                    </ul>
+                </div>
 			</div>
 		</div>
 	</div>

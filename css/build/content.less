@@ -1,10 +1,51 @@
 header {
   .transition-animation(all, .4s, ease);
-  background-color: @scheme-dominant;
+  background-color: #fff;
+
+  &.header-bar {
+
+    .container {
+      max-width: 940px;
+
+      .row {
+        background: url(http://www.mmam.org/portals/_default/skins/mmam/img/header-line.png) bottom left repeat-x;
+        padding: 20px 0 30px 0;
+      }
+    }
+  }
 
   .header-brand {
     font-size: @h2-type-font-size;
     font-family: @font-family-primary;
+    padding: 0;
+  }
+
+  .header-tagline {
+    h2 {
+      color: @scheme-support;
+      font-weight: 500;
+    }
+  }
+
+  .header-social {
+    ul {
+      float: right;
+      margin-top: 30px;
+      li {
+        display: inline-block;
+      }
+    }
+  }
+
+  &.header-nav-bar {
+
+    .container {
+      max-width: 940px;
+
+      .header-nav {
+        padding: 0;
+      }
+    }
   }
 
   nav {
@@ -23,24 +64,25 @@ header {
     ul {
       margin: 0;
       a {
-        padding: 0 20px;
-        font-size: 1.6em;
-        font-weight: 300;
-        color: #fff;
+        padding: 0 16px;
+        //font-size: 1.6em;
+        font-size: 17px;
+        font-weight: 600;
+        color: @scheme-dominant;
         text-transform: none;
         display: block;
-        line-height: 80px;
+        line-height: 52px;
 
-        &:hover {
+        &:hover, &:active {
           text-decoration: none;
           height: 80px;
           border-bottom: 2px solid @scheme-callout;
         }
+
       }
       -webkit-font-smoothing:antialiased;
       list-style: none;
       padding: 0px 0px 0px 0px;
-      float: right;
 
        li {
         &:hover {
@@ -97,6 +139,26 @@ header {
           .transition(all .25s ease);
           .border-radius(3px);
           border: 1px solid @gray-lighter;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  .container {
+    background: url(http://www.mmam.org/portals/_default/skins/mmam/img/header-line.png) top left no-repeat;
+    color: #1f334c;
+    max-width: 940px;
+    a {
+      color: #1f334c;
+    }
+    .footer-links {
+      ul {
+        li {
+          a {
+            border-right: 1px solid #1f334c;
+          }
         }
       }
     }
