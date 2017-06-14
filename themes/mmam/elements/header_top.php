@@ -16,8 +16,17 @@
 		'pageMetaKeywords' => isset($pageMetaKeywords) ? $pageMetaKeywords : ''
 	]);?>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <?php
+    $uinfo = new User();
+    if($uinfo->IsLoggedIn()) { ?>
+        <style>
+            /* your styles for logged in user */
+        </style>
+    <?php } ?>
+
+    <?php if ($c->isEditMode()) {  ?>
+
+    <?php } ?>
+
 </head>
-
-<body>
-
-<div class="<?php echo $c->getPageWrapperClass()?>">

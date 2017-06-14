@@ -1,6 +1,10 @@
-<?php defined('C5_EXECUTE') or die("Access Denied.");
+<?php defined('C5_EXECUTE') or die("Access Denied."); ?>
 
-$this->inc('elements/header.php'); ?>
+<?php $this->inc('elements/header_top.php'); ?>
+
+<body <?php   if ($c->isEditMode()) { ?> class="editmode" <?php   } ?> id="pageid<?php  print $c->getCollectionID(); ?>">
+
+<?php $this->inc('elements/header.php'); ?>
 
 <main>
 	<div class="container">
@@ -15,6 +19,7 @@ $this->inc('elements/header.php'); ?>
 				]);
 				echo $innerContent;
 				?>
+                <?php $a = new Area('Main'); $a->enableGridContainer(); $a->display($c); ?>
 			</div>
 		</div>
 	</div>
