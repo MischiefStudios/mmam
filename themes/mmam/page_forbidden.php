@@ -1,5 +1,9 @@
 <?php defined('C5_EXECUTE') or die("Access Denied."); ?>
 
+<?php $this->inc('elements/header_top.php'); ?>
+
+<body <?php   if ($c->isEditMode()) { ?> class="editmode" <?php   } ?> id="pageid<?php  print $c->getCollectionID(); ?>">
+
 <?php $this->inc('elements/header.php'); ?>
 
 <main>
