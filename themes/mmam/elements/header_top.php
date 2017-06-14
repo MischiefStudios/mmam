@@ -4,7 +4,7 @@
 <html lang="<?php echo Localization::activeLanguage() ?>">
 <head>
 
-	<?php $this->inc('elements/analytics_tags_testing.php'); ?>
+	<?php $this->inc('elements/analytics_tags.php'); ?>
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
