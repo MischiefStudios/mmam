@@ -9,15 +9,15 @@ defined('C5_EXECUTE') or die(_("Access Denied."));
 class Controller extends Package {
 
     protected $pkgHandle = 'mmam_package'; //Change to the file directory name, Example: mischief_package
-    protected $appVersionRequired = '5.7.1';
+    protected $appVersionRequired = '8.1.0';
     protected $pkgVersion = '1.0';
 
     public function getPackageDescription() {
-        return t("Minnesota Marine Art Museum Functionality Package. Requires Community Store and Community Store Square Packages."); //Example "Mischief Studios Theme Package"
+        return t("Minnesota Marine Art Museum Theme Package."); //Example "Mischief Studios Theme Package"
     }
 
     public function getPackageName() {
-        return t("Mmam Package"); //Example Mischief Studios
+        return t("MMAM Theme Package"); //Example Mischief Studios
     }
 
     public function install() {

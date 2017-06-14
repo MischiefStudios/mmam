@@ -1,8 +1,7 @@
 <?php
-namespace Application\Theme\Mmam;
-
+namespace Concrete\Package\MmamPackage\Theme\Mmam; //Change ThemeThemeName and ThemeName to the name of the theme folder Camel Case instead of underscore theme_name -> ThemeName
 use Concrete\Core\Area\Layout\Preset\Provider\ThemeProviderInterface;
-use Concrete\Core\Page\Theme\Theme;
+use Concrete\Core\Page\Theme\Theme; //Never Change this
 
 class PageTheme extends Theme implements ThemeProviderInterface
 {
