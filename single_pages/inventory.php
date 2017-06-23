@@ -8,14 +8,6 @@
     'db' => 'c5themestarter'
   );
 
-  $mysql_queries = array(
-    'insert' => 'INSERT INTO `CommunityStoreProducts` (' . $item_data['key'] . ')
-      VALUES ('. $item_data['value'] . ')',
-    'select' => 'SELECT * FROM `CommunityStoreProducts`',
-    'insert2' => 'INSERT INTO `CommunityStoreProducts` ($keys)
-      VALUES ("' . $str . '")'
-  );
-
   // $date = new DateTime();
   // $date->format('Y-m-d H:i:s')
 
@@ -58,9 +50,10 @@
     )
   );
 
-  function database_query(&$con, &$query, &$items){
+  function database_query(&$con, &$items){
 
     $keys = implode (', ', array_keys($items));
+    $values = implode('", "', array_values($items));
 
     $fake_data = array(
       "Nick Test 8",
@@ -69,13 +62,21 @@
 
     $str = implode ('", "', $fake_data);
 
+    $mysql_queries = array(
+      'insert' => 'INSERT INTO `CommunityStoreProducts` (' . $item_data['key'] . ')
+        VALUES ('. $item_data['value'] . ')',
+      'select' => 'SELECT * FROM `CommunityStoreProducts`',
+      'insert2' => 'INSERT INTO `CommunityStoreProducts` (' . $keys . ')
+        VALUES ("' . $values . '")'
+    );
+
     $connection = mysqli_connect($con['server'], $con['user'], $con['pass'], $con['db']);
     // Check connection
     if($connection === false){
       die("ERROR: Could not connect. " . mysqli_connect_error());
     }
 
-    echo $query['insert2'];
+    echo $mysql_queries['insert2'];
 
     // $combined_query = $mysql_queries['insert2'] . '"' . $fake_data['1'] . '", "' . $fake_data['2'] . '")';
     // $result = mysqli_query($con, $combined_query);
@@ -89,15 +90,6 @@
     // mysqli_free_result($result);
   }
 
-  $array1 = array($str . '$str World', $str . ' Universe');
-
-  function combine(&$arr){
-    $str = 'Hello';
-    print_r($arr);
-  }
-
-  combine($array1);
-
-  // database_query($mysql_data, $mysql_queries, $item_data);
+  database_query($mysql_data, $item_data);
 
 ?>

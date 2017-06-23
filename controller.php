@@ -3,6 +3,7 @@ namespace Concrete\Package\MmamPackage;
 
 use Concrete\Core\Package\Package;
 use Concrete\Core\Page\Theme\Theme;
+use \Concrete\Core\Page\Single as SinglePage;
 
 defined('C5_EXECUTE') or die(_("Access Denied."));
 
@@ -23,6 +24,7 @@ class Controller extends Package {
     public function install() {
         $pkg = parent::install();
         Theme::add('mmam', $pkg); //Change to the name of the theme, Example: mischief (should be the folder of the theme)
+        SinglePage::add('inventory', $pkg);
     }
 
     public function uninstall() {
