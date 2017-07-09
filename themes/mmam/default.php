@@ -8,7 +8,7 @@
 
 <main>
     <?php
-    $a = new GlobalArea('Main');
+    $a = new Area('Main');
     $a->display();
     ?>
 </main>
