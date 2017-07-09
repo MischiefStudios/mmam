@@ -25,6 +25,7 @@ class Controller extends Package {
         $pkg = parent::install();
         Theme::add('mmam', $pkg); //Change to the name of the theme, Example: mischief (should be the folder of the theme)
         SinglePage::add('inventory', $pkg);
+        SinglePage::add('import_to_square', $pkg);
     }
 
     public function uninstall() {
